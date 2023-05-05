@@ -1,6 +1,10 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const colors = require('colors');
+
+const userRouter = require('./routes/users'); 
+
+
 //const customersRoutes = require('./routes/customersRoutes');
 //const productRoutes = require('./routes/productRoutes');
 //const categoryRoutes = require('./routes/categoryRoutes');
@@ -20,6 +24,10 @@ app.use(express.urlencoded({ extended : false}));
 
 // public folder static
 app.use(express.static('public'));
+
+
+// Create Routes
+app.use('/api/v1/use', userRouter );
 
 //API init
 /* app.use('api/v1/customers', customersRoutes);

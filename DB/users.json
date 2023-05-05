@@ -1,0 +1,17 @@
+[
+    {
+        "id"    : 1,
+        "name"  : "Akram Khan",
+        "skill" : "React Devs"
+    },
+    {
+        "id"    : 2,
+        "name"  : "Azizul",
+        "skill" : "JS Devs"
+    },
+    {
+        "id"    : 3,
+        "name"  : " Khan",
+        "skill" : "MERN Devs"
+    }
+]
