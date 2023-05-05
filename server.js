@@ -9,7 +9,7 @@ const colors = require('colors');
 
 //Environment Variable 
 dotenv.config();
-const PORT = process.env.PORT || 4040;
+const PORT = process.env.PORT || 8080;
 
 // Express init
 const app = express();
@@ -22,10 +22,10 @@ app.use(express.urlencoded({ extended : false}));
 app.use(express.static('public'));
 
 //API init
-app.use('api/v1/customers', customersRoutes);
-app.use('api/v1/product', productRoutes);
+/* app.use('api/v1/customers', customersRoutes);
+app.use('api/v1/products', productRoutes);
 app.use('api/v1/category', categoryRoutes);
-app.use('api/v1/tag', tagRoutes);
+app.use('api/v1/tag', tagRoutes); */
 
 //Server listen
 app.listen(PORT, () => {
