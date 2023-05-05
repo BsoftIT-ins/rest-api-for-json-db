@@ -1,4 +1,4 @@
-const {readFileSync} = require('fs');
+const {readFileSync, writeFileSync} = require('fs');
 const path = require('path');
 
 
@@ -22,7 +22,29 @@ const getAllUser = (req, res) => {
  * @access public
  */
 const createUser =(req, res) =>{
-    res.json(req.body);
+
+    //Get user data from JSON DB
+    const users = JSON.parse(readFileSync(path.join(__dirname, '../DB/users.json')));
+    
+    //Get body data
+    const {name, skill} = req.body;
+
+    //data validation
+    if(!name || !skill){
+        res.status(400).json({
+            message: "Name & skill is required"
+        });
+    }else{
+        users.push({
+            id : Math.floor(Math.random() * 100000000000).toString(),
+            name: name,
+            skill: skill
+        });
+        writeFileSync(path.join(__dirname, '../DB/users.json'), JSON.stringify(users));
+        res.status(201).json({
+            message: "User created successfully"
+        });
+    }
 }
 
 //Exports Routes

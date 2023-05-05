@@ -37,5 +37,5 @@ app.use('api/v1/tag', tagRoutes); */
 
 //Server listen
 app.listen(PORT, () => {
-    console.log(`Server running on ${PORT}`.bgGreen.bgCyan);
+    console.log(`Server running on ${PORT}`.bgGreen.black);
 })
