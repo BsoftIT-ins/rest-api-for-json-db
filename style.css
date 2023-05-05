@@ -1,0 +1,81 @@
+/* Custom styles for the template */
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: dosis;
+}
+.shop-header img{
+  height: 200px;
+}
+.shop-menu ul li {
+  display: inline-block;
+
+}
+.shop-menu ul li a{
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  color: #ccc;
+}
+.widget{
+  margin-bottom: 20px;
+}
+.widget-title{
+  font-size: 18px;
+  font-weight: bold;
+}
+.category ul{
+  padding-left: 0px;
+}
+.category ul li{
+  padding-left: 10px;
+  border-bottom: 1px dotted#ccc;
+  list-style: none;
+  
+}
+.category ul li a{
+  display: block;
+  color: #333;
+  padding: 5px 0px;
+  text-decoration: none;
+}
+.tags-item{
+  display: flex;
+  gap: 10px;
+}
+.tags-item a{
+  display: block;
+  padding: 4px 7px;
+  background-color: #333;
+  color: #ccc;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.product-item{
+  
+}
+.card{
+  display: flex;
+}
+.single-view .single-price{
+  font-size: 24px;
+  display: block;
+  margin: 20px 0px;
+}
+.dash-menu ul{
+  padding-left: 0px;
+  list-style: none;
+  
+}
+.dash-menu ul li{
+  padding: 10px 20px;
+  
+}
+.dash-menu ul li a{
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
